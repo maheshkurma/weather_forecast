@@ -1,0 +1,17 @@
+  <% if forecast_data.present? %>
+   <center> <h2>Weather Forecast Info</h2></center>
+
+    <table>
+      <tr>
+        <th>Temperature</th>
+        <th>Low Temp</th>
+        <th>High Temp</th>
+      </tr>
+      <tr>
+        <td><%= forecast_data["temperature"] %></td>
+        <td><%= forecast_data["temp_min"] %></td>
+        <td><%= forecast_data["temp_max"] %></td>
+      </tr>
+    </table>
+
+  <% end %>

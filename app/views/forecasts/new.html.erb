@@ -1,0 +1,17 @@
+<center>
+<div>
+  <h1> New Weather Forecast</h1>
+    <div id="error" style="margin-bottom: 10px;"> </div>
+
+    <div>
+  <%= form_tag(forecasts_path(format: :js), method: 'get', remote: true) do %>
+    <%= label_tag :location %>
+    <%= text_field_tag :input %>
+  <%= submit_tag 'Submit', :id => "addressSubmit",:name => 'commit'%>
+  <% end %>
+  </div>
+  <div id="forecast_data" >
+    <h6> Forecast info will display here.......!</h6>
+  </div>
+</div>
+</center>

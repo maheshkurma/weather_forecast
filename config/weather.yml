@@ -1,0 +1,11 @@
+defaults:
+  api_key: <%= ENV['ACCESS_TOKEN'] %>
+
+development:
+  api_key: <%= ENV['ACCESS_TOKEN'] || '198062f81a96a67ed1d24e1ddd28b4eb' %>
+  
+test:
+  api_key: <%= ENV['ACCESS_TOKEN'] || '198062f81a96a67ed1d24e1ddd28b4eb'%>
+
+production:
+  api_key: <%= ENV['ACCESS_TOKEN'] %>
