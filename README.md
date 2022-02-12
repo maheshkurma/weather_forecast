@@ -16,6 +16,7 @@ Weather Forecast is a minimal app which allow you to get weather forcast when yo
 ```
 ruby - 2.6.2
 rails - 6.1.4
+redis
 ```
 
 **Clone the repo locally**

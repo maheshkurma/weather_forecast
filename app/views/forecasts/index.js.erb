@@ -2,7 +2,7 @@
 $("#error").empty();
 $("#forecast_data").empty();
 <% if @result["error"] %>
-  $("#error").html('<%= escape_javascript render(partial: 'error', locals: { error: @error} )  %>');
+  $("#error").html('<%= escape_javascript render(partial: 'error', locals: { error: @result["error"]} )  %>');
 <% else %>
   $("#forecast_data").html('<%= escape_javascript render(partial: 'result', locals: { forecast_data: @result} )  %>');
 <% end %>
